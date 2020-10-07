@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Main{
     public static int SIZE = 3;
     public static int DOTS_TO_WIN = 3;
-    public static final char DOT_EMPTY = '•';
+    public static final char DOT_EMPTY = ' ';
     public static final char DOT_X = 'X';
     public static final char DOT_O = 'O';
     public static char[][] map;
@@ -143,7 +143,7 @@ class Main{
 
     static boolean chooseYourSymbol() {
 
-        System.out.println("Крестики или нолики? Введите 1 - для крестиков, 0 - для ноликов");
+        System.out.println("Крестики или нолики? Введите 1 - для игры крестиками, 0 - для игры ноликами");
         Scanner scan = new Scanner(System.in);
         int xOr0;
             xOr0 = scan.nextInt();
